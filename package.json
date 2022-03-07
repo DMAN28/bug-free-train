@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "social-networkapi",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMAN28/bug-free-train.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMAN28/bug-free-train/issues"
+  },
+  "homepage": "https://github.com/DMAN28/bug-free-train#readme"
+}
