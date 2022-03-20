@@ -11,7 +11,8 @@ const newUser = new Schema({
       type: String,
       unique: true,
       required: true,
-      trim: true
+      trim: true,
+      match: [/.+@.+\..+/, 'Please enter a valid e-mail address']
       // Must match a valid email address (look into Mongoose's matching validation)
     },
     userThoughts: {
@@ -21,4 +22,16 @@ const newUser = new Schema({
       //Array of _id values referencing the User model (self-reference)
     },
     timestamps: true
-  });
+  }); 
+
+
+
+
+
+//   email: {
+//     type: String,
+//     required: true,
+//     unique: true,
+//     // Regexp to validate emails with more strict rules as added in tests/users.js which also conforms mostly with RFC2822 guide lines
+//     match: [/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, 'Please enter a valid email'],
+//   }
