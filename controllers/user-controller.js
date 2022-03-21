@@ -75,6 +75,11 @@ createUser({ body }, res) {
           .then(dbUserData => res.json(dbUserData))
           .catch(err => res.json(err));
       }
+
+//add friends 
+
+//remove friends 
+
     };
 
 
